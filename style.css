@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins' , sans-serif;
+    box-sizing: border-box;
+}
+body{
+    /* background: #e7e8e5; */
+    color: white;
+}
+.back{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(pageb.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 10px 10%;
+    overflow: hidden;
+}
+.header{
+    background: rgh(0,100,0);
+    text-align: center;
+   }
+   .header ul{
+    display: inline-flex;
+    list-style: none;
+    color: red;
+   }
+   .header ul li{
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+   }
+   .header ul li a{
+    text-decoration: none;
+    color: red;
+   }
+   .active, .header ul li:hover{
+    background: rgb(235, 117, 117);
+    border-radius: 3px;
+   }
+  hr{
+    background-color: aqua;
+  }
+ #mid{
+    position: absolute;
+    top: 180px;
+    left: 90px;
+    font-style: oblique;
+    font-size: xx-large;
+    animation: 0.7s;
+ }
+
+
+ .anim{
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 0.7s linear forwards;
+ }
+ @keyframes moveup{
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+ }
+
+
+ @media screen and (max-width:600px)
+ {
+    #mid{
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .bio{
+        display: none;
+    }
+    .header{
+        width: auto;
+        position: unset;
+        font-size: 8px;
+        line-height: 20px;
+       }
+       .header ul{
+        width: auto;
+        position: unset;
+       }
+       .header ul li{
+        width: auto;
+        position: unset;
+       }
+       .header ul li a{
+        width: auto;
+       }
+
+ }
+ 

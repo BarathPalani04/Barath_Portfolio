@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins' , sans-serif;
+    box-sizing: border-box;
+}
+body{
+
+    color: white;
+}
+.back{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(pageb.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 10px 10%;
+    overflow: hidden;
+}
+.mine{
+    font-size: larger;
+    position: absolute;
+    top: 100px;
+    animation: 0.5s;
+}
+.my{
+    width: 45%;
+    top:250px;
+}
+.my ul{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: 30px;
+}
+.my ul{
+    margin:10 px 0;
+}
+.skill-bar {
+    display: inline-block;
+    width: 60%;
+    height: 10px;
+    background-color: white;
+    margin-left: 10px;
+    position: relative;
+}
+
+.skill-bar span {
+    display: block;
+    height: 100%;
+    background-color: blue;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.skill-bar .html {
+    width: 100%;
+    font-size: 100px;
+}
+
+.skill-bar .css {
+    width: 90%;
+}
+
+.skill-bar .java {
+    width: 80%;
+}
+
+.skill-bar .javascript {
+    width: 70%;
+}
+
+.skill-bar .sql {
+    width: 65%;
+}
+
+
+.my{
+    position: absolute;
+    left:400px;
+    animation: 0.5s;
+}
+
+
+
+button{
+    display: inline-block;
+    text-decoration: none;
+    padding: 14px 40px;
+    background-image: linear-gradient(45deg, #df4881, #c430d7);
+    font-size: 14px;
+    border-radius: 30px;
+    border-top-right-radius: 0;
+    transition: 0.5s;
+    position: absolute;
+    top: 20px;
+    left: 150px;
+}
+button:hover{
+    border-top-right-radius: 30px;
+}
+.mine{
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 0.7s linear forwards;
+}
+@keyframes moveup {
+   100%{
+    opacity: 1;
+    transform: translateY(30px);
+   }
+   /* 50%{
+    opacity: 0;
+    transform: translateY(0px);
+   }
+   75%{
+    opacity: 1;
+    transform: translateY(30px);
+   }
+   100%{
+    opacity: 0;
+    transform: translateY(0px);
+   } */
+}
+.my{
+    opacity: 0;
+    transform: translateX(40px);
+    animation: moveright 0.7s linear forwards;
+}
+@keyframes moveright {
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@media screen and (max-width:600px){
+        .mine{
+            font-size: 10px;
+            line-height: 25px;
+        }
+        .lan{
+            display: none;
+        }
+        .skill-bar{
+            display: none;
+        }
+        .my{
+            display: none;
+        }
+}
+

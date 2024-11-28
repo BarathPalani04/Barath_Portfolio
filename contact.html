@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <style>
+        body{
+
+            color: white;
+        }
+        .back{
+        width: 100%;
+        min-height: 100vh;
+        background-image: url(pageb.jpg);
+        background-position: center;
+        background-size: cover;
+        padding: 10px 10%;
+        overflow: hidden;
+        }
+        .info{
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        .contact-left{
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            gap: 20px;
+        }
+        .contact-inputs{
+            width: 400px;
+            height: 50px;
+            border: none;
+            outline: none;
+            padding-left: 25px;
+            font-weight: 500;
+            color: #090909;
+            border-radius: 30%;
+
+        }
+        .contact-inputs-text{
+            height: 150px;
+            padding-top: 15px;
+            border-radius: 30px;
+        }
+        .contact-inputs:focus{
+            border: 2px solid #ff994f;
+        }
+        .contact-left button{
+            display: flex;
+            align-items: center;
+            padding: 15px 30px;
+            font-size: 16px;
+            color: #fff;
+            gap: 10px;
+            border: none;
+            border-radius: 50px;
+            background: linear-gradient(270deg, #ff994f, #fa6d86);
+            cursor: pointer;
+        }
+        @media (max-width:200px) {
+            .contact-inputs{
+                width: 200vw;
+            }
+            .contact-inputs-text{
+                width: 200vw;
+            }
+            .contact-left button{
+                width:200vw;
+            }
+            
+        }
+    </style>
+    <script>
+        function info(){
+            event.preventDefault();
+            window.location.reload();
+        }
+    </script>
+</head>
+<body>
+    <div class="back">
+    <div class="info">
+        <form  action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+            <input type="hidden" name="access_key" value="8a40ed23-7be5-44fe-a930-610785b10f7c">
+            <input type="text" name="name" placeholder="enter your name" class="contact-inputs" required>
+            <input type="text" name="Email" placeholder="enter your Email" class="contact-inputs" required>
+            <textarea name="Meassage" placeholder="enter message" class="contact-inputs-text" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    </div>
+</body>
+</html>
